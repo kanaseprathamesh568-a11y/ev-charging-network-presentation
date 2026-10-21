@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - EV Charging Network</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Navigation Bar -->
+  <header class="h-14 border-b border-slate-800 bg-slate-900 px-6 flex items-center justify-between shrink-0">
+    <div class="flex items-center space-x-3">
+      <a href="index.html" class="flex items-center space-x-2 text-cyan-400 font-bold text-sm tracking-wide hover:text-cyan-300">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        <span>Back to Presentation</span>
+      </a>
+      <span class="text-slate-700">|</span>
+      <span class="text-xs text-slate-400 font-mono uppercase tracking-wider">Legal Documentation</span>
+    </div>
+    <div class="flex items-center space-x-4 text-xs text-slate-400">
+      <a href="terms.html" class="hover:text-slate-200">Terms and Conditions</a>
+      <a href="index.html" class="hover:text-slate-200">Presentation Deck</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-4xl mx-auto w-full px-6 py-10">
+    <div class="mb-8 pb-6 border-b border-slate-800">
+      <span class="text-xs font-mono text-cyan-400 font-semibold uppercase tracking-widest">Policy Document</span>
+      <h1 class="text-3xl font-extrabold text-white mt-1">Privacy Policy</h1>
+      <p class="text-xs text-slate-400 mt-2">Effective Date: October 2026 | Last Updated: October 2026</p>
+    </div>
+
+    <div class="space-y-8 text-sm text-slate-300 leading-relaxed">
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">1. Overview and Scope</h2>
+        <p>
+          This Privacy Policy outlines how the EV Charging Network ("the Platform", "we", "us", or "our") collects, processes, and protects personal data, vehicle telemetry, and sensor records gathered through our company-owned urban charging hubs, valet operations, and distributed highway host network.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">2. Information We Collect</h2>
+        <p class="mb-2">We collect only information necessary to operate, authenticate, and secure charging sessions:</p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
+          <li><strong>Identity and Contact Data:</strong> Name, verified mobile phone number, email address, and cryptographic public key tokens.</li>
+          <li><strong>Vehicle Identification Data:</strong> Vehicle make, model, license plate number, battery capacity, and charge port specification.</li>
+          <li><strong>Telemetry and Electrical Data:</strong> Real-time voltage, current, power draw, kilowatt-hours delivered, connector temperature, and fault status codes.</li>
+          <li><strong>Perimeter and Security Data:</strong> Timestamped CCTV verification images captured before and after charging sessions, and virtual perimeter motion events within designated charging zones.</li>
+          <li><strong>Geofencing Data:</strong> Precise GPS coordinates during session initiation to confirm proximity to the designated charging stall.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">3. Purpose and Legal Basis for Processing</h2>
+        <p class="mb-2">Your information is processed strictly for the following purposes:</p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
+          <li>Facilitating scheduled urban valet pickup, charging, and vehicle return.</li>
+          <li>Generating time-bound cryptographic access tokens for distributed host chargers.</li>
+          <li>Verifying pre-session and post-session vehicle condition to protect both hosts and drivers against false damage claims.</li>
+          <li>Real-time electrical safety monitoring to prevent equipment degradation, thermal runaway, and electrical faults.</li>
+          <li>Processing billing, host commission disbursements, and settlement escrow.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">4. CCTV and Visual Perimeter Evidence</h2>
+        <p>
+          Closed-circuit visual monitoring and photographic condition scans are conducted exclusively within the designated charging perimeter (Safe Zone and Warning Zone buffer). Visual recordings are encrypted in transit and at rest using AES-256 encryption. Routine session footage without incident is retained for a maximum of 30 days, after which it is permanently purged. Records subject to an active dispute or liability review are retained until resolution.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">5. Data Sharing and Third Parties</h2>
+        <p>
+          We do not sell, rent, or monetize your personal data. Data is shared exclusively with:
+        </p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-300 mt-2">
+          <li><strong>Charger Hosts:</strong> Limited to vehicle model and booking schedule; no personal residential contact details are exchanged.</li>
+          <li><strong>Certified Payment Processors:</strong> For transaction settlement under PCI-DSS compliance.</li>
+          <li><strong>Emergency and Safety Authorities:</strong> If required by law or in the event of an acute electrical or physical safety breach.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">6. Data Security and Cryptographic Storage</h2>
+        <p>
+          All communications between mobile applications, IoT smart lock controllers, EVSE monitors, and cloud infrastructure utilize TLS 1.3 encryption. Hardware access tokens utilize asymmetric elliptic curve cryptography with automatic expiration.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">7. User Rights</h2>
+        <p>
+          You have the right to request access to your personal charging logs, request correction of inaccurate records, and request account deletion subject to legal retention obligations for financial audit records.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">8. Contact Information</h2>
+        <p>
+          For privacy inquiries or technical questions regarding telemetry retention, contact the Data Protection Officer at:
+          <span class="block mt-1 font-mono text-cyan-400">privacy@evchargingnetwork.internal</span>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="h-14 border-t border-slate-800 bg-slate-900 px-6 flex items-center justify-between text-xs text-slate-500 shrink-0">
+    <div>
+      EV Charging Network. All rights reserved.
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="terms.html" class="hover:text-slate-300">Terms and Conditions</a>
+      <a href="privacy.html" class="text-slate-300">Privacy Policy</a>
+      <a href="index.html" class="hover:text-slate-300">Presentation Deck</a>
+    </div>
+  </footer>
+
+</body>
+</html>

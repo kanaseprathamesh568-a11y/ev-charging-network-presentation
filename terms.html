@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions - EV Charging Network</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Navigation Bar -->
+  <header class="h-14 border-b border-slate-800 bg-slate-900 px-6 flex items-center justify-between shrink-0">
+    <div class="flex items-center space-x-3">
+      <a href="index.html" class="flex items-center space-x-2 text-cyan-400 font-bold text-sm tracking-wide hover:text-cyan-300">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        <span>Back to Presentation</span>
+      </a>
+      <span class="text-slate-700">|</span>
+      <span class="text-xs text-slate-400 font-mono uppercase tracking-wider">Legal Documentation</span>
+    </div>
+    <div class="flex items-center space-x-4 text-xs text-slate-400">
+      <a href="privacy.html" class="hover:text-slate-200">Privacy Policy</a>
+      <a href="index.html" class="hover:text-slate-200">Presentation Deck</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-4xl mx-auto w-full px-6 py-10">
+    <div class="mb-8 pb-6 border-b border-slate-800">
+      <span class="text-xs font-mono text-cyan-400 font-semibold uppercase tracking-widest">Legal Agreement</span>
+      <h1 class="text-3xl font-extrabold text-white mt-1">Terms and Conditions</h1>
+      <p class="text-xs text-slate-400 mt-2">Effective Date: October 2026 | Last Updated: October 2026</p>
+    </div>
+
+    <div class="space-y-8 text-sm text-slate-300 leading-relaxed">
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">1. Acceptance of Terms</h2>
+        <p>
+          By accessing or utilizing the EV Charging Network platform, mobile interfaces, valet services, or distributed host charging facilities, you enter into a binding agreement with the Platform. If you do not accept these terms, you must not use our software or physical network services.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">2. Service Models and Definitions</h2>
+        <p class="mb-2">The platform coordinates two primary service architectures:</p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
+          <li><strong>Model 1 (Urban Hub and Valet):</strong> Company-operated vertical parking towers where licensed, vetted valet personnel pick up, charge, and return the vehicle to the subscriber's designated parking space.</li>
+          <li><strong>Model 2 (Distributed Host Network):</strong> Verified third-party residential or commercial charging stations accessed via self-service smart IoT lock authorization.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">3. User Obligations and Vehicle Requirements</h2>
+        <p class="mb-2">All vehicle operators utilizing the network warrant that:</p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
+          <li>Their vehicle meets manufacturer specifications, possesses certified electrical charge inlet ports, and has no known battery cell defects or unaddressed safety recalls.</li>
+          <li>They will remain strictly within the designated Green Safe Zone while conducting self-service charging on distributed host premises.</li>
+          <li>They will promptly disconnect and re-holster the charging connector upon completion of the authorized session.</li>
+          <li>They agree to complete the pre-session and post-session photographic verification check.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">4. Host Obligations and Infrastructure Standards</h2>
+        <p class="mb-2">Hosts listing private charging hardware warrant that:</p>
+        <ul class="list-disc pl-5 space-y-1.5 text-slate-300">
+          <li>Their charging equipment is a certified EVSE installed by a licensed electrical contractor compliant with local building and electrical codes.</li>
+          <li>The charging station provides safe, unobstructed access within the agreed listing schedule.</li>
+          <li>The external smart controller module and CCTV monitoring perimeter remain powered and unencumbered during active booking windows.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">5. Perimeter Security and Intrusion Protocol</h2>
+        <p>
+          Distributed host sites operate under a 3-tier perimeter defense system. Entering the Red Restricted Zone (private residential entryways or unauthorized yard areas) constitutes a material breach of terms. Such actions immediately terminate the charging session, trigger physical and digital alert notifications, log incident telemetry, and may result in permanent platform banning and referral to local enforcement authorities.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">6. Electrical Safety and Fault Cutoff</h2>
+        <p>
+          The external controller acts as a safety and telemetry supervisor. In the event that sensor thresholds detect abnormal thermal rise (&gt;65 deg C), ground fault leakage, or voltage surges, the system executes an automated EVSE cutoff sequence within 100 milliseconds. Neither the host nor the platform shall be liable for charging interruptions necessitated by automatic safety protection triggers.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">7. Fees, Settlements, and Cancellation</h2>
+        <p>
+          Billing is determined by metered energy delivery, valet dispatch fees, and platform service fees as specified at the time of booking. Cancellation terms vary by model: urban valet pickups may be cancelled up to 2 hours prior to scheduled window without penalty; highway host reservations may be rescheduled up to 30 minutes before the window opens.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">8. Dispute Resolution and Evidence Pipeline</h2>
+        <p>
+          In the event of an alleged property or equipment damage claim, both parties agree that the platform's immutable digital trail (pre-session photos, post-session photos, telemetry logs, and CCTV perimeter records) shall constitute the authoritative evidentiary record for technical review and liability determinations.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-white mb-2">9. Modifications to Service</h2>
+        <p>
+          The Platform reserves the right to modify network protocols, firmware parameters, or tariff structures with prior notice posted to the platform portal.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="h-14 border-t border-slate-800 bg-slate-900 px-6 flex items-center justify-between text-xs text-slate-500 shrink-0">
+    <div>
+      EV Charging Network. All rights reserved.
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="terms.html" class="text-slate-300">Terms and Conditions</a>
+      <a href="privacy.html" class="hover:text-slate-300">Privacy Policy</a>
+      <a href="index.html" class="hover:text-slate-300">Presentation Deck</a>
+    </div>
+  </footer>
+
+</body>
+</html>

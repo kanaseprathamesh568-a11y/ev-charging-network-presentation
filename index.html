@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EV Charging Network - Technical Presentation</title>
+  <title>EV Charging Network - Technical Interactive Presentation</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
@@ -75,53 +75,54 @@
     <!-- SLIDE 1: TITLE SLIDE                       -->
     <!-- ========================================== -->
     <div class="slide slide-view w-full max-w-5xl h-full flex flex-col justify-center items-center text-center px-4" data-index="1" data-tag="TITLE" data-title="EV CHARGING NETWORK">
-      <div class="inline-flex items-center px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
-        Technical Deck
+      <div class="inline-flex items-center px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-2">
+        Technical Architecture Deck
       </div>
 
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-2">
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-1.5">
         EV CHARGING NETWORK
       </h1>
-      <p class="text-sm sm:text-lg text-slate-400 font-medium mb-5 max-w-2xl">
+      <p class="text-sm sm:text-base text-slate-400 font-medium mb-4 max-w-2xl">
         A secure, convenient and scalable charging ecosystem
       </p>
 
-      <div class="bg-slate-900 border border-slate-800 py-3 px-6 w-full max-w-2xl rounded-lg mb-6">
-        <p class="text-xs sm:text-base font-bold tracking-wide text-cyan-300 font-mono">
+      <div class="bg-slate-900 border border-slate-800 py-2.5 px-6 w-full max-w-2xl rounded-lg mb-5">
+        <p class="text-xs sm:text-sm font-bold tracking-wide text-cyan-300 font-mono">
           "YOU DON'T NEED TO FIND A CHARGER. WE BRING CHARGING TO YOU."
         </p>
       </div>
 
       <!-- Dual Topology Visual Schematic -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-3xl text-left mb-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-3xl text-left">
         <!-- Model 1 Card -->
         <div onclick="goToSlide(4)" class="cursor-pointer p-4 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition">
-          <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center justify-between mb-1.5">
             <span class="w-2.5 h-2.5 rounded-sm bg-cyan-400"></span>
             <span class="text-xs font-mono text-cyan-400 uppercase font-semibold">Model 1</span>
           </div>
           <h3 class="text-base font-bold text-white mb-0.5">URBAN</h3>
-          <p class="text-cyan-400 text-xs font-semibold mb-2">Charging Hub + Valet</p>
+          <p class="text-cyan-400 text-xs font-semibold mb-1.5">Charging Hub + Valet</p>
           <p class="text-slate-400 text-xs leading-relaxed mb-3">
-            Company-owned vertical parking towers with dedicated chargers and integrated solar. Valet collects, charges, and returns vehicle to owner apartment bay.
+            Company-owned vertical parking towers with dedicated chargers and solar. Valet collects, charges, and returns vehicle.
           </p>
-          <!-- SVG Mini Cutaway -->
-          <svg class="w-full h-14 bg-slate-950 rounded border border-slate-800 p-1" viewBox="0 0 200 40">
+          <!-- SVG Visual Demonstration -->
+          <svg class="w-full h-16 bg-slate-950 rounded border border-slate-800 p-1" viewBox="0 0 200 45">
             <rect x="10" y="2" width="60" height="4" fill="#06b6d4" />
-            <text x="75" y="6" fill="#94a3b8" font-size="5" font-family="monospace">Rooftop Solar</text>
-            <rect x="10" y="10" width="50" height="26" fill="none" stroke="#334155" stroke-dasharray="2 2" />
-            <rect x="14" y="13" width="18" height="8" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
-            <rect x="38" y="13" width="18" height="8" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
-            <rect x="14" y="24" width="18" height="8" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
-            <rect x="38" y="24" width="18" height="8" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
-            <text x="75" y="20" fill="#94a3b8" font-size="5" font-family="monospace">Vertical Stacker (3x Density)</text>
-            <text x="75" y="30" fill="#06b6d4" font-size="5" font-family="monospace">Valet Induction Staging</text>
+            <text x="75" y="6" fill="#94a3b8" font-size="5" font-family="monospace">Rooftop Solar Array</text>
+            <rect x="10" y="8" width="55" height="34" fill="none" stroke="#334155" stroke-dasharray="2 2" />
+            <rect x="14" y="11" width="22" height="9" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
+            <rect x="40" y="11" width="22" height="9" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
+            <rect x="14" y="22" width="22" height="9" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
+            <rect x="40" y="22" width="22" height="9" rx="1" fill="#1e293b" stroke="#06b6d4" stroke-width="0.5" />
+            <text x="75" y="18" fill="#94a3b8" font-size="5" font-family="monospace">Vertical Stacker (3x Density)</text>
+            <text x="75" y="28" fill="#06b6d4" font-size="5" font-family="monospace">Dedicated 22kW EVSE per Stall</text>
+            <text x="75" y="38" fill="#10b981" font-size="5" font-family="monospace">Valet Pickup & Drop Logistics</text>
           </svg>
         </div>
 
         <!-- Model 2 Card -->
         <div onclick="goToSlide(5)" class="cursor-pointer p-4 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 transition">
-          <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center justify-between mb-1.5">
             <div class="flex space-x-1">
               <span class="w-2.5 h-2.5 rounded-sm bg-slate-400"></span>
               <span class="w-2.5 h-2.5 rounded-sm bg-slate-400"></span>
@@ -129,21 +130,21 @@
             <span class="text-xs font-mono text-slate-400 uppercase font-semibold">Model 2</span>
           </div>
           <h3 class="text-base font-bold text-white mb-0.5">HIGHWAY</h3>
-          <p class="text-slate-300 text-xs font-semibold mb-2">Secure Distributed Charging</p>
+          <p class="text-slate-300 text-xs font-semibold mb-1.5">Secure Distributed Charging</p>
           <p class="text-slate-400 text-xs leading-relaxed mb-3">
-            Verified residential and commercial host network. Secure self-service with 3-zone virtual perimeter defense and cryptographic smart lock control.
+            Verified residential and commercial host network. Secure self-service with 3-zone virtual perimeter and smart IoT lock.
           </p>
-          <!-- SVG Mini Highway Topology -->
-          <svg class="w-full h-14 bg-slate-950 rounded border border-slate-800 p-1" viewBox="0 0 200 40">
-            <line x1="10" y1="20" x2="190" y2="20" stroke="#475569" stroke-width="2" stroke-dasharray="6 4" />
-            <circle cx="40" cy="20" r="5" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
-            <text x="36" y="22" fill="#06b6d4" font-size="5" font-family="monospace">H1</text>
-            <circle cx="100" cy="20" r="5" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
-            <text x="96" y="22" fill="#06b6d4" font-size="5" font-family="monospace">H2</text>
-            <circle cx="160" cy="20" r="5" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
-            <text x="156" y="22" fill="#06b6d4" font-size="5" font-family="monospace">H3</text>
+          <!-- SVG Visual Demonstration -->
+          <svg class="w-full h-16 bg-slate-950 rounded border border-slate-800 p-1" viewBox="0 0 200 45">
+            <line x1="10" y1="22" x2="190" y2="22" stroke="#475569" stroke-width="2" stroke-dasharray="6 4" />
+            <circle cx="35" cy="22" r="5" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
+            <text x="31" y="24" fill="#06b6d4" font-size="5" font-family="monospace">H1</text>
+            <circle cx="95" cy="22" r="5" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
+            <text x="91" y="24" fill="#06b6d4" font-size="5" font-family="monospace">H2</text>
+            <circle cx="155" cy="22" r="5" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5" />
+            <text x="151" y="24" fill="#06b6d4" font-size="5" font-family="monospace">H3</text>
             <text x="10" y="10" fill="#94a3b8" font-size="5" font-family="monospace">Highway Transit Corridor</text>
-            <text x="10" y="34" fill="#64748b" font-size="5" font-family="monospace">Distributed Host Nodes (Zero CapEx)</text>
+            <text x="10" y="38" fill="#64748b" font-size="5" font-family="monospace">Host Nodes (IoT Smart Latch + CCTV)</text>
           </svg>
         </div>
       </div>
@@ -153,68 +154,68 @@
     <!-- SLIDE 2: 01 : PROBLEM                      -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="2" data-tag="01 : PROBLEM" data-title="The problem in one picture">
-      <div class="mb-4">
+      <div class="mb-3">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">01 : PROBLEM</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">The problem in one picture</h2>
-        <p class="text-slate-400 text-xs mt-0.5">Empirical failure modes in urban residential charging and inter-city corridors</p>
+        <p class="text-slate-400 text-xs mt-0.5">Empirical failure modes in urban residential charging and highway mobility</p>
       </div>
 
-      <!-- 3-Node Architecture Flow -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+      <!-- 3-Node Visual Process Diagram -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
+        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
           <div class="flex items-center justify-between text-cyan-400 text-xs font-mono font-bold mb-1">
             <span>[ Node 01 ]</span>
             <span>Origin</span>
           </div>
-          <h4 class="text-sm font-bold text-slate-100 mb-1">Apartment</h4>
+          <h4 class="text-sm font-bold text-slate-100 mb-0.5">Apartment</h4>
           <p class="text-slate-300 text-xs font-semibold mb-2">No dedicated charger</p>
-          <ul class="text-xs text-slate-400 space-y-1 mb-3">
-            <li>- Shared garages lack dedicated sub-metered 240V circuits</li>
-            <li>- Level 1 120V outlet adds only ~4 miles range per hour</li>
-            <li>- Full 60 kWh charge requires 40+ hours on standard outlets</li>
+          <ul class="text-xs text-slate-400 space-y-1 mb-2">
+            <li>- Shared garages lack dedicated 240V circuits</li>
+            <li>- Level 1 120V outlet adds only 4 miles/hr</li>
+            <li>- Full 60 kWh charge takes 40+ hours</li>
           </ul>
-          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[11px] text-slate-400 font-mono">
-            42% of urban EV intenders cannot install home chargers.
+          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400 font-mono">
+            42% of urban EV drivers cannot install home plugs.
           </div>
         </div>
 
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
           <div class="flex items-center justify-between text-cyan-400 text-xs font-mono font-bold mb-1">
             <span>[ Node 02 ]</span>
             <span>Constraint</span>
           </div>
-          <h4 class="text-sm font-bold text-slate-100 mb-1">EV OWNER</h4>
+          <h4 class="text-sm font-bold text-slate-100 mb-0.5">EV OWNER</h4>
           <p class="text-slate-300 text-xs font-semibold mb-2">Needs routine charging</p>
-          <ul class="text-xs text-slate-400 space-y-1 mb-3">
-            <li>- Requires predictable weekly schedule (2-3 sessions)</li>
-            <li>- Loses 3 to 4 hours per week diverted to public plazas</li>
-            <li>- Evening battery depletion limits next-day mobility readiness</li>
+          <ul class="text-xs text-slate-400 space-y-1 mb-2">
+            <li>- Demands predictable weekly schedule</li>
+            <li>- Loses 3-4 hours/week waiting at plazas</li>
+            <li>- Battery depletion limits daily readiness</li>
           </ul>
-          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[11px] text-cyan-300 font-mono">
-            Dilemma: Vehicle ownership utility impaired by routine friction.
+          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[10px] text-cyan-300 font-mono">
+            Friction: High logistical chore for vehicle owners.
           </div>
         </div>
 
-        <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
           <div class="flex items-center justify-between text-cyan-400 text-xs font-mono font-bold mb-1">
             <span>[ Node 03 ]</span>
             <span>Bottleneck</span>
           </div>
-          <h4 class="text-sm font-bold text-slate-100 mb-1">Public charger</h4>
+          <h4 class="text-sm font-bold text-slate-100 mb-0.5">Public charger</h4>
           <p class="text-slate-300 text-xs font-semibold mb-2">Travel + wait + uncertainty</p>
-          <ul class="text-xs text-slate-400 space-y-1 mb-3">
-            <li>- 15% to 25% average dispenser offline / faulted rate</li>
-            <li>- Unpredictable queues during peak hours (20-45 min wait)</li>
-            <li>- Escalating demand charges and idle parking penalties</li>
+          <ul class="text-xs text-slate-400 space-y-1 mb-2">
+            <li>- 15%-25% dispenser offline/fault rate</li>
+            <li>- Peak hour queues of 20-45 minutes</li>
+            <li>- Expensive parking fees and idle fines</li>
           </ul>
-          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[11px] text-slate-400 font-mono">
-            Result: High variance, queue anxiety, lost productive time.
+          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400 font-mono">
+            Outcome: Range anxiety, queue delay, lost time.
           </div>
         </div>
       </div>
 
-      <!-- Core Research Insight Box -->
-      <div class="p-4 rounded-lg bg-slate-900 border border-slate-800">
+      <!-- Second Problem & Opportunity Banner -->
+      <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
         <p class="text-xs text-slate-300 mb-1">
           <strong class="text-slate-100">The second problem:</strong> long-distance EV travel can have charging gaps, while many private chargers sit unused for hours.
         </p>
@@ -228,330 +229,417 @@
     <!-- SLIDE 3: 02 : SOLUTION                     -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="3" data-tag="02 : SOLUTION" data-title="One platform. Two charging models.">
-      <div class="mb-4">
+      <div class="mb-3">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">02 : SOLUTION</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">One platform. Two charging models.</h2>
         <p class="text-slate-400 text-xs mt-0.5">Complementary infrastructure solving metropolitan density and corridor transit</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <!-- Model 1 Specs -->
         <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center justify-between mb-1.5">
               <span class="text-xs font-mono text-cyan-400 font-bold uppercase">MODEL 1</span>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Urban Core</span>
             </div>
             <h3 class="text-base font-bold text-white mb-2">CHARGING HUB</h3>
-            <ul class="space-y-1.5 text-xs text-slate-300 mb-4">
+            <ul class="space-y-1.5 text-xs text-slate-300 mb-3">
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Company-owned hub:</strong> Centralized multi-megawatt grid connection.</span>
+                <span><strong>Company-owned hub:</strong> Dedicated multi-megawatt installation.</span>
               </li>
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Vertical parking:</strong> 3x vehicle capacity per square foot of urban footprint.</span>
+                <span><strong>Vertical parking:</strong> 3x vehicle capacity per square foot of land.</span>
               </li>
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Dedicated chargers:</strong> Every stall wired with dedicated 11kW-22kW AC port.</span>
+                <span><strong>Dedicated chargers:</strong> Every stall has dedicated 11kW-22kW AC port.</span>
               </li>
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Optional solar:</strong> Rooftop array paired with battery buffer for peak shaving.</span>
+                <span><strong>Optional solar:</strong> Rooftop array paired with battery storage buffer.</span>
               </li>
             </ul>
           </div>
           <div class="p-2.5 rounded bg-slate-950 border border-slate-800 text-xs text-slate-400">
-            <strong class="text-white block mb-0.5">Operations:</strong>
-            White-glove valet concierge handles evening pickup from subscriber apartment and returns fully charged vehicle by 7:00 AM.
+            <strong class="text-white block mb-0.5">Valet Concierge:</strong>
+            Scheduled evening pickup from subscriber apartment and 7:00 AM return.
           </div>
         </div>
 
         <!-- Model 2 Specs -->
         <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center justify-between mb-1.5">
               <span class="text-xs font-mono text-slate-400 font-bold uppercase">MODEL 2</span>
               <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Highway Transit</span>
             </div>
             <h3 class="text-base font-bold text-white mb-2">DISTRIBUTED NETWORK</h3>
-            <ul class="space-y-1.5 text-xs text-slate-300 mb-4">
+            <ul class="space-y-1.5 text-xs text-slate-300 mb-3">
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Verified host chargers:</strong> Monetizes private residential and business Level 2 EVSEs.</span>
+                <span><strong>Verified host chargers:</strong> Monetizes private residential & commercial EVSEs.</span>
               </li>
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Secure self-service:</strong> Zero homeowner friction; no physical contact or keys required.</span>
+                <span><strong>Secure self-service:</strong> Zero homeowner friction; no physical contact.</span>
               </li>
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Highway availability:</strong> Fills long-distance route gaps between sparse fast chargers.</span>
+                <span><strong>Highway availability:</strong> Fills long-distance route gaps between fast chargers.</span>
               </li>
               <li class="flex items-start space-x-2">
                 <span class="text-cyan-400 font-bold font-mono">-</span>
-                <span><strong>Smart IoT control:</strong> Solenoid holster locks only during authorized booking windows.</span>
+                <span><strong>Smart IoT control:</strong> Solenoid holster locks only during authorized bookings.</span>
               </li>
             </ul>
           </div>
           <div class="p-2.5 rounded bg-slate-950 border border-slate-800 text-xs text-slate-400">
-            <strong class="text-white block mb-0.5">Operations:</strong>
-            Travellers authenticate via geofenced cryptographic token, self-plug, and depart with zero host supervision needed.
+            <strong class="text-white block mb-0.5">Asset-Light Scaling:</strong>
+            Scales network footprint without building expensive concrete charging depots.
           </div>
         </div>
       </div>
     </div>
 
     <!-- ========================================== -->
-    <!-- SLIDE 4: 03 : URBAN                        -->
+    <!-- SLIDE 4: 03 : URBAN (VISUAL INTERACTION)   -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="4" data-tag="03 : URBAN" data-title="Model 1 - Charging Hub + Valet">
-      <div class="mb-3">
+      <div class="mb-2">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">03 : URBAN</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Model 1 - Charging Hub + Valet</h2>
-        <p class="text-slate-400 text-xs mt-0.5">End-to-end concierge lifecycle and facility engineering</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Model 1 - Charging Hub + Valet</h2>
+        <p class="text-slate-400 text-xs">Interactive Lifecycle Demonstration: Click steps to inspect the operations</p>
       </div>
 
-      <!-- 5-Step Process Sequence -->
-      <div class="grid grid-cols-5 gap-2 mb-3">
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">STEP 01</div>
-          <div class="text-xs font-bold text-white mt-0.5">Book</div>
-          <div class="text-[10px] text-slate-400 mt-1">App scheduling</div>
+      <!-- 5-Step Interactive Stepper Buttons -->
+      <div class="grid grid-cols-5 gap-2 mb-2">
+        <button onclick="setUrbanStep(0)" id="u-btn-0" class="p-2 rounded bg-cyan-950 border border-cyan-500 text-left transition">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold">01 : BOOK</div>
+          <div class="text-xs font-bold text-white">Schedule</div>
+        </button>
+        <button onclick="setUrbanStep(1)" id="u-btn-1" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">02 : PICKUP</div>
+          <div class="text-xs font-bold text-slate-300">Verified Valet</div>
+        </button>
+        <button onclick="setUrbanStep(2)" id="u-btn-2" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">03 : TOWER</div>
+          <div class="text-xs font-bold text-slate-300">Vertical Stacker</div>
+        </button>
+        <button onclick="setUrbanStep(3)" id="u-btn-3" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">04 : CHARGE</div>
+          <div class="text-xs font-bold text-slate-300">Solar + 22kW</div>
+        </button>
+        <button onclick="setUrbanStep(4)" id="u-btn-4" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">05 : RETURN</div>
+          <div class="text-xs font-bold text-slate-300">Morning Drop</div>
+        </button>
+      </div>
+
+      <!-- Interactive SVG Schematic & Step Detail -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
+        <!-- Visual Cutaway Diagram -->
+        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 flex flex-col justify-between">
+          <div class="text-[10px] font-mono text-slate-400 uppercase mb-1">Architectural Cutaway</div>
+          <svg class="w-full h-32 bg-slate-950 rounded border border-slate-800 p-2" viewBox="0 0 240 100">
+            <!-- Roof Solar -->
+            <rect x="20" y="8" width="120" height="6" fill="#06b6d4" />
+            <text x="145" y="13" fill="#06b6d4" font-size="6" font-family="monospace">Rooftop Solar Array</text>
+            <!-- Tower Frame -->
+            <rect x="20" y="16" width="120" height="75" fill="none" stroke="#334155" stroke-width="1.5" />
+            <!-- Vertical Stalls -->
+            <rect id="tower-stall-1" x="25" y="20" width="40" height="18" fill="#1e293b" stroke="#475569" stroke-width="0.5" />
+            <text x="32" y="31" fill="#94a3b8" font-size="5" font-family="monospace">Stall 3A (22kW)</text>
+            <rect id="tower-stall-2" x="90" y="20" width="40" height="18" fill="#1e293b" stroke="#475569" stroke-width="0.5" />
+            <text x="97" y="31" fill="#94a3b8" font-size="5" font-family="monospace">Stall 3B (22kW)</text>
+
+            <rect id="tower-stall-3" x="25" y="44" width="40" height="18" fill="#1e293b" stroke="#475569" stroke-width="0.5" />
+            <text x="32" y="55" fill="#94a3b8" font-size="5" font-family="monospace">Stall 2A (22kW)</text>
+            <rect id="tower-stall-4" x="90" y="44" width="40" height="18" fill="#1e293b" stroke="#475569" stroke-width="0.5" />
+            <text x="97" y="55" fill="#94a3b8" font-size="5" font-family="monospace">Stall 2B (22kW)</text>
+
+            <!-- Lift Elevator Shaft Center -->
+            <line x1="77" y1="18" x2="77" y2="88" stroke="#06b6d4" stroke-width="1" stroke-dasharray="2 2" />
+            <!-- Ground Induction Lane -->
+            <rect x="20" y="70" width="120" height="20" fill="#0f172a" />
+            <text x="25" y="82" fill="#64748b" font-size="5" font-family="monospace">Ground Staging & Valet Induction</text>
+
+            <!-- Interactive Vehicle Indicator -->
+            <rect id="sim-car" x="25" y="72" width="28" height="14" rx="2" fill="#06b6d4" stroke="#ffffff" stroke-width="0.5" />
+            <text id="sim-car-text" x="30" y="81" fill="#0b0f19" font-size="5" font-family="monospace" font-weight="bold">EV : 24%</text>
+          </svg>
         </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">STEP 02</div>
-          <div class="text-xs font-bold text-white mt-0.5">Verified pickup</div>
-          <div class="text-[10px] text-slate-400 mt-1">Condition scan</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">STEP 03</div>
-          <div class="text-xs font-bold text-white mt-0.5">Vertical hub</div>
-          <div class="text-[10px] text-slate-400 mt-1">Stack induction</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">STEP 04</div>
-          <div class="text-xs font-bold text-white mt-0.5">Charge</div>
-          <div class="text-[10px] text-slate-400 mt-1">Dedicated EVSE</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">STEP 05</div>
-          <div class="text-xs font-bold text-white mt-0.5">Return</div>
-          <div class="text-[10px] text-slate-400 mt-1">Morning delivery</div>
+
+        <!-- Dynamic Step Operational Explanation -->
+        <div id="u-detail-box" class="p-3.5 bg-slate-900 rounded-lg border border-slate-800 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-mono text-cyan-400 font-bold uppercase mb-1" id="u-detail-tag">STAGE 01 : BOOKING</div>
+            <h4 class="text-sm font-bold text-white mb-1" id="u-detail-title">Owner Schedules Pickup Window via Mobile App</h4>
+            <p class="text-xs text-slate-400 leading-relaxed" id="u-detail-desc">
+              Owner specifies target state of charge (80% or 100%) and selects 9:00 PM pickup with 7:00 AM delivery. Cloud platform reserves dedicated vertical hub stall.
+            </p>
+          </div>
+          <div class="mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-cyan-300" id="u-detail-metric">
+            Status: Reserved | Target SoC: 80% | Route: Optimal
+          </div>
         </div>
       </div>
 
-      <!-- Facility Cross-Section Diagram & Specifications -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">VERTICAL PARKING</div>
-          <p class="text-xs text-slate-300 font-semibold mb-1">More vehicles per unit of land</p>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Automated mechanical multi-tier stacking. Replaces 40,000 sq ft surface parking with a 6,000 sq ft tower footprint, dramatically lowering urban real estate cost per stall.
-          </p>
+      <!-- 3 Core Pillars -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
+          <strong class="text-white block">VERTICAL PARKING:</strong>
+          <span class="text-slate-400">3x land density through multi-tier automated stacking.</span>
         </div>
-
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">DEDICATED CHARGERS</div>
-          <p class="text-xs text-slate-300 font-semibold mb-1">Each parking position has charging access</p>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Eliminates midnight vehicle repositioning. Dynamic load balancing controller distributes available electrical service without exceeding facility grid capacity.
-          </p>
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
+          <strong class="text-white block">DEDICATED CHARGERS:</strong>
+          <span class="text-slate-400">Each parking stall wired with dedicated 22kW AC port.</span>
         </div>
-
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">SOLAR POTENTIAL</div>
-          <p class="text-xs text-slate-300 font-semibold mb-1">Roof / structure can supplement demand</p>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Integrated rooftop solar photovoltaic canopy paired with stationary battery energy storage systems (BESS) captures daytime generation to shave high-tariff utility peak hours.
-          </p>
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
+          <strong class="text-white block">SOLAR POTENTIAL:</strong>
+          <span class="text-slate-400">Rooftop generation captures clean power for peak shaving.</span>
         </div>
-      </div>
-
-      <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-xs text-slate-400 font-mono">
-        Valet Protocol: Pre-dispatch identity token verification, dashcam logging, and automated insurance liability coverage active throughout transit.
       </div>
     </div>
 
     <!-- ========================================== -->
-    <!-- SLIDE 5: 04 : HIGHWAY                      -->
+    <!-- SLIDE 5: 04 : HIGHWAY (VISUAL DEMO)        -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="5" data-tag="04 : HIGHWAY" data-title="Model 2 - Secure Distributed Charging">
-      <div class="mb-3">
+      <div class="mb-2">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">04 : HIGHWAY</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Model 2 - Secure Distributed Charging</h2>
-        <p class="text-cyan-300 font-mono text-xs mt-0.5">Turn unused charging capacity into verified network capacity.</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Model 2 - Secure Distributed Charging</h2>
+        <p class="text-cyan-300 font-mono text-xs">Turn unused charging capacity into verified network capacity.</p>
       </div>
 
-      <!-- 5-Phase Self-Service Sequence -->
-      <div class="grid grid-cols-5 gap-2 mb-3">
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">01</div>
-          <div class="text-xs font-bold text-white mt-0.5">Host lists</div>
-          <div class="text-[10px] text-slate-400 mt-1">Schedule & rate</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">02</div>
-          <div class="text-xs font-bold text-white mt-0.5">Traveller books</div>
-          <div class="text-[10px] text-slate-400 mt-1">Route reserve</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">03</div>
-          <div class="text-xs font-bold text-white mt-0.5">Authenticate</div>
-          <div class="text-[10px] text-slate-400 mt-1">BLE token handshake</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">04</div>
-          <div class="text-xs font-bold text-white mt-0.5">Self-charge</div>
-          <div class="text-[10px] text-slate-400 mt-1">Monitored EVSE</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">05</div>
-          <div class="text-xs font-bold text-white mt-0.5">Auto-lock</div>
-          <div class="text-[10px] text-slate-400 mt-1">Holster secured</div>
-        </div>
+      <!-- 5-Phase Sequence Buttons -->
+      <div class="grid grid-cols-5 gap-2 mb-2">
+        <button onclick="setHighwayStep(0)" id="h-btn-0" class="p-2 rounded bg-cyan-950 border border-cyan-500 text-left transition">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold">01 : LIST</div>
+          <div class="text-xs font-bold text-white">Host Node</div>
+        </button>
+        <button onclick="setHighwayStep(1)" id="h-btn-1" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">02 : BOOK</div>
+          <div class="text-xs font-bold text-slate-300">Route Reserve</div>
+        </button>
+        <button onclick="setHighwayStep(2)" id="h-btn-2" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">03 : AUTH</div>
+          <div class="text-xs font-bold text-slate-300">BLE Token</div>
+        </button>
+        <button onclick="setHighwayStep(3)" id="h-btn-3" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">04 : CHARGE</div>
+          <div class="text-xs font-bold text-slate-300">Self-Plug</div>
+        </button>
+        <button onclick="setHighwayStep(4)" id="h-btn-4" class="p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">05 : LOCK</div>
+          <div class="text-xs font-bold text-slate-300">Auto-Latch</div>
+        </button>
       </div>
 
-      <!-- Engineering Design Rationale Box -->
-      <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 mb-3">
-        <div class="text-xs font-mono font-bold text-cyan-400 uppercase mb-1.5">Critical Design Decision</div>
-        <p class="text-sm font-semibold text-white mb-2">
-          A highway traveller should not need a company driver at every residential charger. The system therefore supports secure self-service.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-slate-400 pt-2 border-t border-slate-800">
+      <!-- Visual Node Demonstration & Step Detail -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
+        <!-- SVG Highway Node Diagram -->
+        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+          <div class="text-[10px] font-mono text-slate-400 uppercase mb-1">Transit Node Interaction</div>
+          <svg class="w-full h-32 bg-slate-950 rounded border border-slate-800 p-2" viewBox="0 0 240 100">
+            <!-- Highway -->
+            <rect x="0" y="10" width="240" height="20" fill="#0f172a" />
+            <line x1="0" y1="20" x2="240" y2="20" stroke="#475569" stroke-width="1.5" stroke-dasharray="6 4" />
+            <text x="10" y="8" fill="#64748b" font-size="5" font-family="monospace">Interstate Highway Route</text>
+
+            <!-- Access Ramp -->
+            <path d="M 60 30 Q 80 50 120 50 L 160 50" fill="none" stroke="#334155" stroke-width="2" />
+            
+            <!-- Host Property Bay -->
+            <rect x="160" y="40" width="70" height="50" rx="2" fill="#1e293b" stroke="#334155" />
+            <text x="165" y="48" fill="#94a3b8" font-size="5" font-family="monospace">Host Driveway Node</text>
+
+            <!-- EVSE Pedestal & Smart Lock -->
+            <rect x="210" y="55" width="8" height="18" fill="#06b6d4" />
+            <text x="190" y="65" fill="#06b6d4" font-size="5" font-family="monospace">Smart Lock</text>
+
+            <!-- Vehicle on driveway -->
+            <rect id="hw-car" x="168" y="60" width="30" height="15" rx="2" fill="#3b82f6" />
+            <text id="hw-car-status" x="172" y="70" fill="#ffffff" font-size="5" font-family="monospace">Parked</text>
+
+            <!-- Geofence Radius -->
+            <circle cx="214" cy="64" r="30" fill="none" stroke="#06b6d4" stroke-width="0.5" stroke-dasharray="3 3" />
+            <text x="180" y="93" fill="#64748b" font-size="4" font-family="monospace">50m BLE Geofence</text>
+          </svg>
+        </div>
+
+        <!-- Dynamic Step Operational Explanation -->
+        <div id="h-detail-box" class="p-3.5 bg-slate-900 rounded-lg border border-slate-800 flex flex-col justify-between">
           <div>
-            <strong class="text-slate-200 block mb-0.5">Zero Labor Overhead:</strong>
-            Company drivers in rural or interstate corridors are cost-prohibitive. Self-service enables unassisted operations around the clock.
+            <div class="text-[10px] font-mono text-cyan-400 font-bold uppercase mb-1" id="h-detail-tag">PHASE 01 : LISTING</div>
+            <h4 class="text-sm font-bold text-white mb-1" id="h-detail-title">Host Publishes Availability Window & Tariff</h4>
+            <p class="text-xs text-slate-400 leading-relaxed" id="h-detail-desc">
+              Homeowner configures idle hours (e.g., 9:00 AM - 5:00 PM). Smart controller links to platform with zero manual host intervention.
+            </p>
           </div>
+          <div class="mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-cyan-300" id="h-detail-metric">
+            Hardware: 240V / 32A | Availability: Mon-Fri 8 hrs | Rate: Tariff + Margin
+          </div>
+        </div>
+      </div>
+
+      <!-- Critical Design Decision Spotlight -->
+      <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-xs">
+        <strong class="text-white block mb-0.5">Critical Design Decision:</strong>
+        <span class="text-slate-300">A highway traveller should not need a company driver at every residential charger. The system therefore supports secure self-service.</span>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SLIDE 6: 05 : TRUST (INTERACTIVE RADAR)    -->
+    <!-- ========================================== -->
+    <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="6" data-tag="05 : TRUST" data-title="Security: a charger is not an open door">
+      <div class="mb-2">
+        <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">05 : TRUST</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Security: a charger is not an open door</h2>
+        <p class="text-slate-400 text-xs">Interactive 3-Zone Virtual Perimeter: Click zones or test scenarios</p>
+      </div>
+
+      <!-- 3-Zone Interactive Selector Buttons -->
+      <div class="grid grid-cols-3 gap-2 mb-2">
+        <button onclick="setSecurityZone('green')" id="sec-btn-green" class="p-2.5 rounded bg-emerald-950 border-2 border-emerald-500 text-left transition">
+          <div class="text-[10px] font-mono text-emerald-400 font-bold">ZONE 1 : GREEN</div>
+          <div class="text-xs font-bold text-white">Safe Authorized Area</div>
+        </button>
+        <button onclick="setSecurityZone('yellow')" id="sec-btn-yellow" class="p-2.5 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-amber-400 font-bold">ZONE 2 : YELLOW</div>
+          <div class="text-xs font-bold text-slate-300">Warning Buffer (3m)</div>
+        </button>
+        <button onclick="setSecurityZone('red')" id="sec-btn-red" class="p-2.5 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-rose-400 font-bold">ZONE 3 : RED</div>
+          <div class="text-xs font-bold text-slate-300">Restricted Residence</div>
+        </button>
+      </div>
+
+      <!-- Visual Perimeter Site Plan Schematic -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
+        <!-- SVG Driveway Site Plan -->
+        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+          <div class="text-[10px] font-mono text-slate-400 uppercase mb-1">2D Driveway Site Security Map</div>
+          <svg class="w-full h-36 bg-slate-950 rounded border border-slate-800 p-2" viewBox="0 0 240 110">
+            <!-- Property Boundary -->
+            <rect x="10" y="10" width="220" height="90" fill="none" stroke="#334155" stroke-dasharray="2 2" />
+
+            <!-- RED ZONE: House and Porch -->
+            <rect id="svg-zone-red" x="15" y="15" width="90" height="80" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" />
+            <text x="25" y="30" fill="#ef4444" font-size="6" font-family="monospace" font-weight="bold">RED RESTRICTED</text>
+            <text x="25" y="42" fill="#94a3b8" font-size="5" font-family="monospace">Private Residence & Porch</text>
+            <text x="25" y="52" fill="#64748b" font-size="4" font-family="monospace">PIR Motion Active</text>
+
+            <!-- YELLOW ZONE: Driveway Buffer -->
+            <rect id="svg-zone-yellow" x="110" y="15" width="115" height="80" fill="#0f172a" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 3" />
+            <text x="120" y="28" fill="#f59e0b" font-size="5" font-family="monospace">YELLOW WARNING (3m Buffer)</text>
+
+            <!-- GREEN ZONE: Charging Stall -->
+            <rect id="svg-zone-green" x="135" y="38" width="60" height="45" rx="2" fill="#064e3b" stroke="#10b981" stroke-width="2" />
+            <text x="140" y="48" fill="#10b981" font-size="5" font-family="monospace" font-weight="bold">GREEN SAFE ZONE</text>
+            <text x="140" y="58" fill="#94a3b8" font-size="4.5" font-family="monospace">Vehicle Bay (2.5m x 5m)</text>
+
+            <!-- EVSE Dock Unit -->
+            <rect x="200" y="50" width="8" height="16" fill="#06b6d4" />
+            <text x="200" y="74" fill="#06b6d4" font-size="4" font-family="monospace">EVSE</text>
+
+            <!-- Visitor Indicator Dot -->
+            <circle id="sec-visitor-dot" cx="165" cy="65" r="4" fill="#10b981" />
+          </svg>
+        </div>
+
+        <!-- Dynamic Security Status Box -->
+        <div id="sec-status-box" class="p-3.5 bg-slate-900 rounded-lg border border-emerald-800 flex flex-col justify-between">
           <div>
-            <strong class="text-slate-200 block mb-0.5">Host Privacy and Security:</strong>
-            Smart IoT locks and virtual boundaries eliminate the need for hosts to greet visitors, monitor cords, or unlock gates.
+            <div class="text-[10px] font-mono text-emerald-400 font-bold uppercase mb-1" id="sec-tag">ACTIVE ZONE : GREEN (SAFE)</div>
+            <h4 class="text-sm font-bold text-white mb-1" id="sec-title">Authorized Charging Area Active</h4>
+            <p class="text-xs text-slate-400 leading-relaxed" id="sec-desc">
+              Vehicle driver parked in designated stall. Optical AI confirms authorized presence within 2.5m charging radius. EVSE power relays engaged.
+            </p>
+          </div>
+          <div class="mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-emerald-300" id="sec-action">
+            Alarm State: OFF | Optical Tracking: Normal | EVSE: 240V Engaged
           </div>
         </div>
       </div>
 
       <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-xs text-slate-400">
-        Hardware Kit: External controller retrofits onto existing NEMA 14-50 or hardwired J1772/NACS chargers in under 30 minutes without voiding EVSE UL certification.
-      </div>
-    </div>
-
-    <!-- ========================================== -->
-    <!-- SLIDE 6: 05 : TRUST                        -->
-    <!-- ========================================== -->
-    <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="6" data-tag="05 : TRUST" data-title="Security: a charger is not an open door">
-      <div class="mb-3">
-        <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">05 : TRUST</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Security: a charger is not an open door</h2>
-        <p class="text-slate-400 text-xs mt-0.5">Multi-layer virtual perimeter and optical monitoring architecture</p>
-      </div>
-
-      <!-- 3-Zone Architecture Diagram and Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-emerald-800/80">
-          <div class="text-xs font-mono font-bold text-emerald-400 mb-1">GREEN : SAFE ZONE</div>
-          <div class="text-xs font-semibold text-white mb-1">Authorized charging area</div>
-          <p class="text-xs text-slate-400 leading-relaxed mb-2">
-            Designated vehicle stall (2.5m x 5m) and EVSE pedestal. Vehicle driver is permitted to park, plug in, and remain in vehicle.
-          </p>
-          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400 font-mono">
-            Active: Optical tracking, ground loop detector.
-          </div>
-        </div>
-
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-amber-800/80">
-          <div class="text-xs font-mono font-bold text-amber-400 mb-1">YELLOW : WARNING ZONE</div>
-          <div class="text-xs font-semibold text-white mb-1">Warning + continued monitoring</div>
-          <p class="text-xs text-slate-400 leading-relaxed mb-2">
-            Perimeter buffer zone (3m radius). Passing pedestrians trigger a polite audio chime advising of active monitoring.
-          </p>
-          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400 font-mono">
-            Active: Dual-beam PIR sensors, high-res clip logger.
-          </div>
-        </div>
-
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-rose-800/80">
-          <div class="text-xs font-mono font-bold text-rose-400 mb-1">RED : RESTRICTED ZONE</div>
-          <div class="text-xs font-semibold text-white mb-1">Alarm + notification + event log</div>
-          <p class="text-xs text-slate-400 leading-relaxed mb-2">
-            Private residence entryway, side gate, or windows. Unauthorized breach triggers strobe, mobile push, and EVSE power cutoff.
-          </p>
-          <div class="p-2 rounded bg-slate-950 border border-slate-800 text-[10px] text-slate-400 font-mono">
-            Active: 100ms relay kill, police dispatch log.
-          </div>
-        </div>
-      </div>
-
-      <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-400">
         CCTV + virtual perimeter monitoring keeps the charging interaction controlled. The zones are a conceptual safety framework designed to reduce unwanted movement and false alarms.
       </div>
     </div>
 
     <!-- ========================================== -->
-    <!-- SLIDE 7: 06 : ACCESS                       -->
+    <!-- SLIDE 7: 06 : ACCESS (HARDWARE SCHEMATIC)  -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="7" data-tag="06 : ACCESS" data-title="Smart charger control">
-      <div class="mb-3">
+      <div class="mb-2">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">06 : ACCESS</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Smart charger control</h2>
-        <p class="text-slate-400 text-xs mt-0.5">Hardware isolation, cryptographic gating, and dual firmware modes</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Smart charger control</h2>
+        <p class="text-slate-400 text-xs">Hardware architecture and dual-mode firmware state machine</p>
       </div>
 
-      <!-- Access Sequence Pipeline -->
-      <div class="grid grid-cols-5 gap-2 mb-3">
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">01</div>
-          <div class="text-xs font-bold text-white mt-0.5">Identity verified</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">KYC auth</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">02</div>
-          <div class="text-xs font-bold text-white mt-0.5">Temporary access</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Time-bound key</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">03</div>
-          <div class="text-xs font-bold text-white mt-0.5">Unlock</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Solenoid unlatch</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">04</div>
-          <div class="text-xs font-bold text-white mt-0.5">Charge</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Metered current</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center">
-          <div class="text-[10px] font-mono text-cyan-400 font-bold">05</div>
-          <div class="text-xs font-bold text-white mt-0.5">Auto-lock</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Dock re-latched</div>
-        </div>
+      <!-- Mode Selector -->
+      <div class="grid grid-cols-2 gap-2 mb-2">
+        <button onclick="setAccessMode('owner')" id="acc-btn-owner" class="p-2.5 rounded bg-cyan-950 border-2 border-cyan-500 text-left transition">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold">MODE 01 : OWNER</div>
+          <div class="text-xs font-bold text-white">Owner Authenticates -> Uses -> Locks</div>
+        </button>
+        <button onclick="setAccessMode('traveller')" id="acc-btn-traveller" class="p-2.5 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition">
+          <div class="text-[10px] font-mono text-slate-400 font-bold">MODE 02 : TRAVELLER</div>
+          <div class="text-xs font-bold text-slate-300">Temporary Token Authorization -> Locks</div>
+        </button>
       </div>
 
-      <!-- Dual Operating Modes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-mono font-bold text-white uppercase">OWNER MODE</span>
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Host Override</span>
-          </div>
-          <div class="text-xs font-mono text-cyan-400 mb-2">
-            Owner authenticates -> uses charger -> session ends -> lock
-          </div>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            The property owner retains perpetual master control. One-tap NFC or registered smartphone proximity bypasses network clearing, allowing personal charging with unmetered utility rates.
-          </p>
+      <!-- Circuit Diagram and Controller Architecture -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
+        <!-- SVG Hardware Controller Schematic -->
+        <div class="p-3 bg-slate-900 rounded-lg border border-slate-800">
+          <div class="text-[10px] font-mono text-slate-400 uppercase mb-1">Controller Circuit & Signal Flow</div>
+          <svg class="w-full h-36 bg-slate-950 rounded border border-slate-800 p-2" viewBox="0 0 240 110">
+            <!-- Mains High Voltage Block -->
+            <rect x="10" y="10" width="75" height="40" fill="#1e293b" stroke="#f59e0b" />
+            <text x="15" y="22" fill="#f59e0b" font-size="5" font-family="monospace">AC Mains (240V 50A)</text>
+            <text x="15" y="34" fill="#94a3b8" font-size="4.5" font-family="monospace">Certified EVSE</text>
+            <rect id="svg-relay" x="60" y="24" width="20" height="16" fill="#0f172a" stroke="#10b981" />
+            <text x="63" y="34" fill="#10b981" font-size="4" font-family="monospace">Relay</text>
+
+            <!-- External Smart Controller -->
+            <rect x="10" y="60" width="130" height="45" fill="#0f172a" stroke="#06b6d4" />
+            <text x="15" y="70" fill="#06b6d4" font-size="5" font-family="monospace">External IoT Supervisor Module</text>
+            <rect x="15" y="76" width="35" height="22" fill="#1e293b" stroke="#334155" />
+            <text x="18" y="86" fill="#94a3b8" font-size="4" font-family="monospace">MCU + Crypto</text>
+            <text x="18" y="94" fill="#64748b" font-size="3.5" font-family="monospace">TLS 1.3 / BLE</text>
+
+            <!-- Pilot Lines -->
+            <line x1="55" y1="84" x2="160" y2="84" stroke="#06b6d4" stroke-width="1" />
+            <text x="75" y="80" fill="#06b6d4" font-size="4" font-family="monospace">Control Pilot (CP/PP)</text>
+
+            <!-- Solenoid Lock Dock -->
+            <rect x="160" y="30" width="70" height="65" fill="#1e293b" stroke="#334155" />
+            <text x="165" y="42" fill="#94a3b8" font-size="5" font-family="monospace">Charging Dock Unit</text>
+            <rect id="svg-solenoid" x="170" y="50" width="45" height="18" fill="#0f172a" stroke="#06b6d4" />
+            <text id="svg-solenoid-text" x="175" y="61" fill="#06b6d4" font-size="4.5" font-family="monospace">Solenoid: UNLOCKED</text>
+
+            <circle cx="210" cy="80" r="6" fill="#10b981" />
+            <text x="204" y="82" fill="#0b0f19" font-size="4" font-family="monospace" font-weight="bold">J1772</text>
+          </svg>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="flex items-center justify-between mb-1">
-            <span class="text-xs font-mono font-bold text-white uppercase">TRAVELLER MODE</span>
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300">Guest Access</span>
+        <!-- Dynamic Mode Description -->
+        <div id="acc-detail-box" class="p-3.5 bg-slate-900 rounded-lg border border-slate-800 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-mono text-cyan-400 font-bold uppercase mb-1" id="acc-tag">FIRMWARE MODE : OWNER MODE</div>
+            <h4 class="text-sm font-bold text-white mb-1" id="acc-title">Owner NFC / Smartphone Bypass</h4>
+            <p class="text-xs text-slate-400 leading-relaxed" id="acc-desc">
+              Owner registers master keycard or smartphone. Instant proximity tap releases holster latch. No billing fees or reservations required for personal electricity usage.
+            </p>
           </div>
-          <div class="text-xs font-mono text-cyan-400 mb-2">
-            Booking creates temporary authorization -> secure session -> lock
+          <div class="mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-cyan-300" id="acc-metric">
+            Authorization: Master Key | Billing: Direct Home | Latch: Instant Tap
           </div>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            Platform issues an encrypted, time-stamped authorization token valid exclusively for the reserved window. Connector automatically locks when unplugged from the car.
-          </p>
         </div>
       </div>
 
@@ -561,127 +649,149 @@
     </div>
 
     <!-- ========================================== -->
-    <!-- SLIDE 8: 07 : VERIFICATION                 -->
+    <!-- SLIDE 8: 07 : VERIFICATION (CV SCANNER)    -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="8" data-tag="07 : VERIFICATION" data-title="Every session leaves evidence">
-      <div class="mb-3">
+      <div class="mb-2">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">07 : VERIFICATION</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Every session leaves evidence</h2>
-        <p class="text-slate-400 text-xs mt-0.5">Multi-point photographic inspection and automated diff analysis</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Every session leaves evidence</h2>
+        <p class="text-slate-400 text-xs">Tripartite photographic inspection workbench & computer vision comparison</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-1">[ 01 : BEFORE ]</div>
+      <!-- 3-Phase Verification Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">[ 01 : BEFORE ]</div>
           <h4 class="text-xs font-bold text-white mb-1">Pre-Session Baseline</h4>
-          <p class="text-xs text-slate-400 leading-relaxed mb-2">
-            Driver captures 4 required high-resolution inspection angles before connector release:
-          </p>
           <ul class="text-xs text-slate-300 space-y-1">
-            <li>- Vehicle charge port flap and exterior body</li>
-            <li>- EVSE connector handle and contact pins</li>
-            <li>- Cable sheath continuity and strain relief</li>
-            <li>- Driveway parking bay surface condition</li>
+            <li>- Charge port flap and panel</li>
+            <li>- Connector contact pin integrity</li>
+            <li>- Cable sheath continuity</li>
+            <li>- Driveway parking bay condition</li>
           </ul>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-1">[ 02 : CHARGING ]</div>
-          <h4 class="text-xs font-bold text-white mb-1">Telemetry and Visual Stream</h4>
-          <p class="text-xs text-slate-400 leading-relaxed mb-2">
-            Continuous background audit logging throughout the session:
-          </p>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">[ 02 : CHARGING ]</div>
+          <h4 class="text-xs font-bold text-white mb-1">Active Monitoring</h4>
           <ul class="text-xs text-slate-300 space-y-1">
-            <li>- Voltage, current, temperature recorded at 1 Hz</li>
-            <li>- Optical CCTV motion clip indexing</li>
-            <li>- Control Pilot state transition timestamps</li>
-            <li>- Cryptographic session hash in ledger</li>
+            <li>- Continuous 1 Hz telemetry stream</li>
+            <li>- CCTV perimeter motion clips</li>
+            <li>- Control Pilot state transitions</li>
+            <li>- Cryptographic session log</li>
           </ul>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-1">[ 03 : AFTER ]</div>
-          <h4 class="text-xs font-bold text-white mb-1">Post-Session Verification</h4>
-          <p class="text-xs text-slate-400 leading-relaxed mb-2">
-            Repeat photographs captured at identical perspectives:
-          </p>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">[ 03 : AFTER ]</div>
+          <h4 class="text-xs font-bold text-white mb-1">Post-Session Diff</h4>
           <ul class="text-xs text-slate-300 space-y-1">
-            <li>- Re-docked connector in locked holster</li>
-            <li>- Charge port flap closed confirmation</li>
-            <li>- Cable neatly coiled on pedestal</li>
-            <li>- Automated damage diff verification</li>
+            <li>- Repeat photos at matching angles</li>
+            <li>- Re-docked and locked holster</li>
+            <li>- Coiled cable confirmation</li>
+            <li>- Automated diff anomaly check</li>
           </ul>
         </div>
       </div>
 
-      <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-        <p class="text-xs text-slate-300 mb-1">
+      <!-- Interactive Verification Test Bench -->
+      <div class="p-3 bg-slate-900 rounded-lg border border-slate-800 mb-2 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div>
+          <div class="text-[10px] font-mono text-cyan-400 uppercase font-bold">Interactive Verification Workbench</div>
+          <div class="text-xs text-slate-300 mt-0.5">Test automated 16-point computer vision comparison across baseline and departure photos.</div>
+        </div>
+        <div class="flex items-center space-x-2 shrink-0">
+          <button onclick="runVerificationScan()" id="btn-run-verify" class="px-3 py-1.5 rounded bg-cyan-700 hover:bg-cyan-600 text-white font-mono text-xs transition">
+            Run CV Diff Analysis
+          </button>
+          <span id="verify-scan-badge" class="px-2.5 py-1.5 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-emerald-400">
+            Status: Ready
+          </span>
+        </div>
+      </div>
+
+      <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-xs">
+        <p class="text-slate-300">
           <strong class="text-cyan-400">AI / computer vision:</strong> flags possible visible differences.
-        </p>
-        <p class="text-xs text-slate-400">
-          <strong class="text-slate-200">Human/technical verification:</strong> determines what actually happened and supports liability decisions.
+          <strong class="text-slate-200 ml-2">Human/technical verification:</strong> determines what actually happened and supports liability decisions.
         </p>
       </div>
     </div>
 
     <!-- ========================================== -->
-    <!-- SLIDE 9: 08 : MONITORING                   -->
+    <!-- SLIDE 9: 08 : MONITORING (LIVE GAUGES)     -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center px-4" data-index="9" data-tag="08 : MONITORING" data-title="Protect the charger and the vehicle">
-      <div class="mb-3">
+      <div class="mb-2">
         <span class="text-cyan-400 text-xs font-mono font-bold tracking-widest uppercase">08 : MONITORING</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Protect the charger and the vehicle</h2>
-        <p class="text-slate-400 text-xs mt-0.5">Real-time sensor supervision and automated emergency isolation</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-0.5">Protect the charger and the vehicle</h2>
+        <p class="text-slate-400 text-xs">Real-time sensor telemetry dashboard and automated fault isolation controls</p>
       </div>
 
-      <!-- 4 Sensor Channels -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 mb-3">
-        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">TEMPERATURE</div>
-          <div class="text-base font-bold text-white mb-1">32.4 deg C</div>
-          <p class="text-[11px] text-slate-400">Thermal probe at terminal lugs and plug contacts</p>
+      <!-- 4 Live Telemetry Gauge Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-2">
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center" id="card-m-temp">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold mb-0.5">TEMPERATURE</div>
+          <div class="text-xl font-bold text-white font-mono" id="val-m-temp">32.4 deg C</div>
+          <p class="text-[10px] text-slate-400 mt-0.5">Connector Thermocouple</p>
         </div>
 
-        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">VOLTAGE / CURRENT</div>
-          <div class="text-base font-bold text-white mb-1">230V / 32A</div>
-          <p class="text-[11px] text-slate-400">Over/undervoltage and short-circuit surge detection</p>
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center" id="card-m-volts">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold mb-0.5">VOLTAGE / CURRENT</div>
+          <div class="text-xl font-bold text-white font-mono" id="val-m-volts">230V / 32A</div>
+          <p class="text-[10px] text-slate-400 mt-0.5">Phase-to-Neutral Health</p>
         </div>
 
-        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">POWER</div>
-          <div class="text-base font-bold text-white mb-1">7.36 kW</div>
-          <p class="text-[11px] text-slate-400">Class 1 precision energy revenue metering</p>
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center" id="card-m-power">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold mb-0.5">POWER DELIVERY</div>
+          <div class="text-xl font-bold text-white font-mono" id="val-m-power">7.36 kW</div>
+          <p class="text-[10px] text-slate-400 mt-0.5">Class 1 Revenue Meter</p>
         </div>
 
-        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-center">
-          <div class="text-xs font-mono font-bold text-cyan-400 mb-0.5">FAULT CODES</div>
-          <div class="text-base font-bold text-emerald-400 mb-1">0x00 NORMAL</div>
-          <p class="text-[11px] text-slate-400">GFCI ground leakage and pilot PWM state monitor</p>
-        </div>
-      </div>
-
-      <!-- 4-Stage Response Pipeline -->
-      <div class="grid grid-cols-4 gap-2 mb-3 text-center">
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
-          <div class="text-xs font-bold text-white">Detect abnormal behavior</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Continuous 10ms polling</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
-          <div class="text-xs font-bold text-cyan-300">Safe EVSE response</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Sub-100ms pilot drop</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
-          <div class="text-xs font-bold text-white">Notify</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Push alerts to driver & host</div>
-        </div>
-        <div class="p-2.5 rounded bg-slate-900 border border-slate-800">
-          <div class="text-xs font-bold text-white">Inspect if needed</div>
-          <div class="text-[10px] text-slate-400 mt-0.5">Remote diagnostics trip</div>
+        <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-center" id="card-m-fault">
+          <div class="text-[10px] font-mono text-cyan-400 font-bold mb-0.5">FAULT CODES</div>
+          <div class="text-xl font-bold text-emerald-400 font-mono" id="val-m-fault">0x00 NORMAL</div>
+          <p class="text-[10px] text-slate-400 mt-0.5">GFCI & Pilot State</p>
         </div>
       </div>
 
-      <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-400">
+      <!-- Interactive Fault Injection Controls -->
+      <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 mb-2 flex items-center justify-between">
+        <span class="text-xs font-mono text-slate-300 font-bold">Inject Electrical State:</span>
+        <div class="flex space-x-2">
+          <button onclick="injectTelemetry('normal')" class="px-2.5 py-1 text-xs rounded bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700">
+            Normal 7.4 kW
+          </button>
+          <button onclick="injectTelemetry('thermal')" class="px-2.5 py-1 text-xs rounded bg-slate-800 hover:bg-slate-700 text-rose-300 border border-slate-700">
+            Thermal Rise (72 deg C)
+          </button>
+          <button onclick="injectTelemetry('gfci')" class="px-2.5 py-1 text-xs rounded bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700">
+            Ground Fault Trip
+          </button>
+        </div>
+      </div>
+
+      <!-- 4-Stage Automated Response Sequence -->
+      <div class="grid grid-cols-4 gap-2 mb-2 text-center text-xs">
+        <div class="p-2 rounded bg-slate-900 border border-slate-800" id="resp-step-1">
+          <strong class="text-white block">Detect anomaly</strong>
+          <span class="text-[10px] text-slate-400">&lt;10ms polling</span>
+        </div>
+        <div class="p-2 rounded bg-slate-900 border border-cyan-500/50" id="resp-step-2">
+          <strong class="text-cyan-300 block">Safe EVSE response</strong>
+          <span class="text-[10px] text-slate-400">&lt;100ms pilot trip</span>
+        </div>
+        <div class="p-2 rounded bg-slate-900 border border-slate-800" id="resp-step-3">
+          <strong class="text-white block">Notify</strong>
+          <span class="text-[10px] text-slate-400">Driver & host alert</span>
+        </div>
+        <div class="p-2 rounded bg-slate-900 border border-slate-800" id="resp-step-4">
+          <strong class="text-white block">Inspect if needed</strong>
+          <span class="text-[10px] text-slate-400">Remote diagnostics</span>
+        </div>
+      </div>
+
+      <div class="p-2.5 rounded bg-slate-900 border border-slate-800 text-xs text-slate-400">
         Each session creates an auditable digital trail: user identity, vehicle identity, charger identity, booking, time, charging data, CCTV events and condition photos.
       </div>
     </div>
@@ -922,42 +1032,42 @@
     <!-- SLIDE 13: 12 : CONCLUSION                  -->
     <!-- ========================================== -->
     <div class="slide slide-view hidden w-full max-w-5xl h-full flex flex-col justify-center items-center text-center px-4" data-index="13" data-tag="12 : CONCLUSION" data-title="CHARGE WITHOUT THE CHASE.">
-      <div class="inline-flex items-center px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
+      <div class="inline-flex items-center px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-2">
         Executive Summary
       </div>
 
-      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-2">
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-1.5">
         CHARGE WITHOUT THE CHASE.
       </h1>
-      <p class="text-sm text-cyan-300 font-mono mb-5 max-w-xl">
+      <p class="text-sm text-cyan-300 font-mono mb-4 max-w-xl">
         From apartment charging to highway mobility - one secure EV charging network.
       </p>
 
       <!-- 4 Pillars -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-3xl text-left mb-5">
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">CONVENIENCE</div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-3xl text-left mb-4">
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-white mb-0.5">CONVENIENCE</div>
           <p class="text-xs text-slate-400 leading-relaxed">
             Eliminates charging chores for apartment residents via scheduled valet service.
           </p>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">SECURITY</div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-white mb-0.5">SECURITY</div>
           <p class="text-xs text-slate-400 leading-relaxed">
             3-zone perimeter, CCTV event logs, smart hardware lock, and evidence verification.
           </p>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">UTILIZATION</div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-white mb-0.5">UTILIZATION</div>
           <p class="text-xs text-slate-400 leading-relaxed">
             Monetizes idle private chargers, bridging highway range gaps with zero CapEx.
           </p>
         </div>
 
-        <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800">
-          <div class="text-xs font-mono font-bold text-white mb-1">SCALABILITY</div>
+        <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+          <div class="text-xs font-mono font-bold text-white mb-0.5">SCALABILITY</div>
           <p class="text-xs text-slate-400 leading-relaxed">
             Owned hubs combined with asset-light host network scales rapidly.
           </p>
@@ -965,9 +1075,9 @@
       </div>
 
       <!-- Conclusion Takeaway Box -->
-      <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 text-left w-full max-w-3xl mb-5">
-        <div class="text-xs font-mono font-bold text-cyan-400 uppercase mb-1.5">Executive Conclusion</div>
-        <p class="text-xs text-slate-300 leading-relaxed mb-2">
+      <div class="p-4 rounded-lg bg-slate-900 border border-slate-800 text-left w-full max-w-3xl mb-4">
+        <div class="text-xs font-mono font-bold text-cyan-400 uppercase mb-1">Executive Conclusion</div>
+        <p class="text-xs text-slate-300 leading-relaxed mb-1.5">
           By integrating company-owned high-density vertical hubs with a verified distributed host network, the platform resolves both urban residential charging barriers and long-distance highway travel anxiety without capital duplication.
         </p>
         <p class="text-xs text-slate-400 leading-relaxed">
@@ -975,7 +1085,7 @@
         </p>
       </div>
 
-      <p class="max-w-xl text-xs text-slate-500 mb-5">
+      <p class="max-w-xl text-xs text-slate-500 mb-4">
         Proposed concept - technology, hardware and operational details should be validated during pilot implementation.
       </p>
 
@@ -1187,6 +1297,342 @@
         if (document.exitFullscreen) {
           document.exitFullscreen();
         }
+      }
+    }
+
+    // ==========================================
+    // INTERACTIVE DEMO 1: URBAN VALET & TOWER
+    // ==========================================
+    const urbanDetails = [
+      {
+        tag: "STAGE 01 : BOOKING",
+        title: "Owner Schedules Pickup Window via Mobile App",
+        desc: "Owner specifies target state of charge (80% or 100%) and selects 9:00 PM pickup with 7:00 AM delivery. Cloud platform reserves dedicated vertical hub stall.",
+        metric: "Status: Reserved | Target SoC: 80% | Route: Optimal",
+        carX: "25", carY: "72", carText: "EV : 24%",
+        stall1: "#1e293b", stall2: "#1e293b", stall3: "#1e293b"
+      },
+      {
+        tag: "STAGE 02 : VERIFIED PICKUP",
+        title: "Cryptographic Driver Handshake & Walkaround Scan",
+        desc: "Vetted valet arrives at owner apartment bay. Biometric OTP confirms key transfer. 16-point camera scan creates condition baseline before transit.",
+        metric: "Driver Auth: Verified RSA-2048 | Condition: Logged | Transit: Active",
+        carX: "60", carY: "72", carText: "In-Transit",
+        stall1: "#1e293b", stall2: "#1e293b", stall3: "#1e293b"
+      },
+      {
+        tag: "STAGE 03 : TOWER INDUCTION",
+        title: "Mechanical Stacker Elevates Vehicle into Stored Stall",
+        desc: "Vehicle enters vertical staging bay. Computer-controlled elevator lift positions car in dedicated Level 2 stall without human driving or door-ding hazard.",
+        metric: "Stacker: Level 2 Induction | Bay: 2A Dedicated | Land Density: 3x",
+        carX: "25", carY: "44", carText: "Bay 2A",
+        stall1: "#1e293b", stall2: "#1e293b", stall3: "#064e3b"
+      },
+      {
+        tag: "STAGE 04 : SOLAR-OPTIMIZED CHARGING",
+        title: "Dedicated EVSE Engaged with Rooftop Solar Shaving",
+        desc: "Dedicated 22 kW AC port delivers power. On-site battery storage and rooftop solar PV supply 70% of peak energy, avoiding high-tier grid demand penalties.",
+        metric: "Charging: 22 kW AC Active | Power: 70% Solar / 30% Off-Peak Grid",
+        carX: "25", carY: "44", carText: "80% Full",
+        stall1: "#1e293b", stall2: "#1e293b", stall3: "#065f46"
+      },
+      {
+        tag: "STAGE 05 : SCHEDULED MORNING RETURN",
+        title: "Delivered Back to Apartment Parking Bay by 7:00 AM",
+        desc: "Vehicle retrieved by valet at 6:30 AM, final photographic condition check confirmed against baseline, and returned ready for the morning commute.",
+        metric: "Battery: 80% Ready | Condition: 100% Match | Deposit: Released",
+        carX: "105", carY: "72", carText: "Delivered",
+        stall1: "#1e293b", stall2: "#1e293b", stall3: "#1e293b"
+      }
+    ];
+
+    function setUrbanStep(idx) {
+      for (let i = 0; i < 5; i++) {
+        const btn = document.getElementById(`u-btn-${i}`);
+        if (i === idx) {
+          btn.className = "p-2 rounded bg-cyan-950 border border-cyan-500 text-left transition";
+          btn.querySelector('.font-mono').className = "text-[10px] font-mono text-cyan-400 font-bold";
+        } else {
+          btn.className = "p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition";
+          btn.querySelector('.font-mono').className = "text-[10px] font-mono text-slate-400 font-bold";
+        }
+      }
+
+      const d = urbanDetails[idx];
+      document.getElementById('u-detail-tag').innerText = d.tag;
+      document.getElementById('u-detail-title').innerText = d.title;
+      document.getElementById('u-detail-desc').innerText = d.desc;
+      document.getElementById('u-detail-metric').innerText = d.metric;
+
+      // Animate SVG Car
+      const car = document.getElementById('sim-car');
+      const carTxt = document.getElementById('sim-car-text');
+      car.setAttribute('x', d.carX);
+      car.setAttribute('y', d.carY);
+      carTxt.setAttribute('x', String(parseInt(d.carX) + 3));
+      carTxt.setAttribute('y', String(parseInt(d.carY) + 9));
+      carTxt.textContent = d.carText;
+
+      document.getElementById('tower-stall-3').setAttribute('fill', d.stall3);
+    }
+
+    // ==========================================
+    // INTERACTIVE DEMO 2: HIGHWAY HOST NODE
+    // ==========================================
+    const highwayDetails = [
+      {
+        tag: "PHASE 01 : LISTING",
+        title: "Host Publishes Availability Window & Tariff",
+        desc: "Homeowner configures idle hours (e.g., 9:00 AM - 5:00 PM). Smart controller links to platform with zero manual host intervention.",
+        metric: "Hardware: 240V / 32A | Availability: Mon-Fri 8 hrs | Rate: Tariff + Margin",
+        carX: "30", carY: "13", carStatus: "Highway"
+      },
+      {
+        tag: "PHASE 02 : RESERVATION",
+        title: "Highway Traveller Books Guaranteed Route Slot",
+        desc: "En-route driver reserves 45-minute stopover window. Platform places deposit in escrow and reserves slot with 15-minute buffer.",
+        metric: "Reservation: Confirmed | Buffer: 15 min | Escrow: Secured",
+        carX: "80", carY: "13", carStatus: "En-Route"
+      },
+      {
+        tag: "PHASE 03 : BLE GEOFENCE AUTHENTICATION",
+        title: "Cryptographic Handshake Releases Holster Lock",
+        desc: "Vehicle arrives within 50m geofence radius. Secure Bluetooth Low Energy handshake verifies digital key token, unlatching connector latch.",
+        metric: "Geofence: 50m Confirmed | Token: Single-Use JWT | Holster: Unlocked",
+        carX: "168", carY: "60", carStatus: "Arrival"
+      },
+      {
+        tag: "PHASE 04 : SELF-SERVICE CHARGING",
+        title: "Driver Plugs In with Real-Time Telemetry Stream",
+        desc: "Driver plugs connector into car. 11 kW flow begins immediately. Current, voltage, and CCTV footage streamed to cloud ledger.",
+        metric: "Flow: 11 kW AC Active | Current: 32A Balanced | Host Labor: 0 hrs",
+        carX: "168", carY: "60", carStatus: "Charging"
+      },
+      {
+        tag: "PHASE 05 : AUTO-LOCK & SETTLEMENT",
+        title: "Cable Re-Holstered, Solenoid Locks, Payout Cleared",
+        desc: "Driver disconnects and re-holsters cable. Solenoid hardware automatically engages. Host payout released instantly to digital account.",
+        metric: "Hardware: Auto-Locked | Host Payout: Transferred | Session: Closed",
+        carX: "120", carY: "13", carStatus: "Departed"
+      }
+    ];
+
+    function setHighwayStep(idx) {
+      for (let i = 0; i < 5; i++) {
+        const btn = document.getElementById(`h-btn-${i}`);
+        if (i === idx) {
+          btn.className = "p-2 rounded bg-cyan-950 border border-cyan-500 text-left transition";
+          btn.querySelector('.font-mono').className = "text-[10px] font-mono text-cyan-400 font-bold";
+        } else {
+          btn.className = "p-2 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition";
+          btn.querySelector('.font-mono').className = "text-[10px] font-mono text-slate-400 font-bold";
+        }
+      }
+
+      const d = highwayDetails[idx];
+      document.getElementById('h-detail-tag').innerText = d.tag;
+      document.getElementById('h-detail-title').innerText = d.title;
+      document.getElementById('h-detail-desc').innerText = d.desc;
+      document.getElementById('h-detail-metric').innerText = d.metric;
+
+      const car = document.getElementById('hw-car');
+      const stat = document.getElementById('hw-car-status');
+      car.setAttribute('x', d.carX);
+      car.setAttribute('y', d.carY);
+      stat.setAttribute('x', String(parseInt(d.carX) + 4));
+      stat.setAttribute('y', String(parseInt(d.carY) + 9));
+      stat.textContent = d.carStatus;
+    }
+
+    // ==========================================
+    // INTERACTIVE DEMO 3: 3-ZONE SECURITY
+    // ==========================================
+    function setSecurityZone(zone) {
+      const gBtn = document.getElementById('sec-btn-green');
+      const yBtn = document.getElementById('sec-btn-yellow');
+      const rBtn = document.getElementById('sec-btn-red');
+
+      [gBtn, yBtn, rBtn].forEach(b => {
+        b.className = "p-2.5 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition";
+        b.querySelector('.text-xs').className = "text-xs font-bold text-slate-300";
+      });
+
+      const dot = document.getElementById('sec-visitor-dot');
+      const sBox = document.getElementById('sec-status-box');
+      const tag = document.getElementById('sec-tag');
+      const title = document.getElementById('sec-title');
+      const desc = document.getElementById('sec-desc');
+      const act = document.getElementById('sec-action');
+
+      if (zone === 'green') {
+        gBtn.className = "p-2.5 rounded bg-emerald-950 border-2 border-emerald-500 text-left transition";
+        gBtn.querySelector('.text-xs').className = "text-xs font-bold text-white";
+        dot.setAttribute('cx', '165');
+        dot.setAttribute('cy', '65');
+        dot.setAttribute('fill', '#10b981');
+
+        sBox.className = "p-3.5 bg-slate-900 rounded-lg border border-emerald-800 flex flex-col justify-between";
+        tag.className = "text-[10px] font-mono text-emerald-400 font-bold uppercase mb-1";
+        tag.innerText = "ACTIVE ZONE : GREEN (SAFE)";
+        title.innerText = "Authorized Charging Area Active";
+        desc.innerText = "Vehicle driver parked in designated stall. Optical AI confirms authorized presence within 2.5m charging radius. EVSE power relays engaged.";
+        act.className = "mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-emerald-300";
+        act.innerText = "Alarm State: OFF | Optical Tracking: Normal | EVSE: 240V Engaged";
+      } else if (zone === 'yellow') {
+        yBtn.className = "p-2.5 rounded bg-amber-950 border-2 border-amber-500 text-left transition";
+        yBtn.querySelector('.text-xs').className = "text-xs font-bold text-white";
+        dot.setAttribute('cx', '125');
+        dot.setAttribute('cy', '55');
+        dot.setAttribute('fill', '#f59e0b');
+
+        sBox.className = "p-3.5 bg-slate-900 rounded-lg border border-amber-800 flex flex-col justify-between";
+        tag.className = "text-[10px] font-mono text-amber-400 font-bold uppercase mb-1";
+        tag.innerText = "ACTIVE ZONE : YELLOW (WARNING BUFFER)";
+        title.innerText = "Pedestrian Motion Detected at 3m Driveway Perimeter";
+        desc.innerText = "Passing movement detected outside vehicle bay. Courtesy directional chime sounded: 'Active security recording'. Camera stream flagged for host review.";
+        act.className = "mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-amber-300";
+        act.innerText = "Chime: Active | Camera Stream: High Priority | Host Alert: Low";
+      } else if (zone === 'red') {
+        rBtn.className = "p-2.5 rounded bg-rose-950 border-2 border-rose-500 text-left transition";
+        rBtn.querySelector('.text-xs').className = "text-xs font-bold text-white";
+        dot.setAttribute('cx', '55');
+        dot.setAttribute('cy', '50');
+        dot.setAttribute('fill', '#ef4444');
+
+        sBox.className = "p-3.5 bg-slate-900 rounded-lg border border-rose-800 flex flex-col justify-between";
+        tag.className = "text-[10px] font-mono text-rose-400 font-bold uppercase mb-1";
+        tag.innerText = "ACTIVE ZONE : RED (RESTRICTED BREACH)";
+        title.innerText = "Perimeter Intrusion Alarm Triggered";
+        desc.innerText = "Subject entered private residential porch or side gate. Strobe alarm engages immediately, EVSE contactor trips within 100ms, and incident log records clip.";
+        act.className = "mt-3 p-2 rounded bg-slate-950 border border-slate-800 text-[11px] font-mono text-rose-400";
+        act.innerText = "Alarm: STROBE ON | EVSE Power: KILLED (0V) | Dispatch Log: Recorded";
+      }
+    }
+
+    // ==========================================
+    // INTERACTIVE DEMO 4: ACCESS MODE
+    // ==========================================
+    function setAccessMode(mode) {
+      const oBtn = document.getElementById('acc-btn-owner');
+      const tBtn = document.getElementById('acc-btn-traveller');
+      const tag = document.getElementById('acc-tag');
+      const title = document.getElementById('acc-title');
+      const desc = document.getElementById('acc-desc');
+      const metric = document.getElementById('acc-metric');
+      const solTxt = document.getElementById('svg-solenoid-text');
+
+      if (mode === 'owner') {
+        oBtn.className = "p-2.5 rounded bg-cyan-950 border-2 border-cyan-500 text-left transition";
+        oBtn.querySelector('.font-mono').className = "text-[10px] font-mono text-cyan-400 font-bold";
+        tBtn.className = "p-2.5 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition";
+        tBtn.querySelector('.font-mono').className = "text-[10px] font-mono text-slate-400 font-bold";
+
+        tag.innerText = "FIRMWARE MODE : OWNER MODE";
+        title.innerText = "Owner NFC / Smartphone Bypass";
+        desc.innerText = "Owner registers master keycard or smartphone. Instant proximity tap releases holster latch. No billing fees or reservations required for personal electricity usage.";
+        metric.innerText = "Authorization: Master Key | Billing: Direct Home | Latch: Instant Tap";
+        solTxt.textContent = "Solenoid: UNLOCKED";
+        document.getElementById('svg-solenoid').setAttribute('stroke', '#06b6d4');
+      } else {
+        tBtn.className = "p-2.5 rounded bg-cyan-950 border-2 border-cyan-500 text-left transition";
+        tBtn.querySelector('.font-mono').className = "text-[10px] font-mono text-cyan-400 font-bold";
+        oBtn.className = "p-2.5 rounded bg-slate-900 border border-slate-800 text-left hover:border-slate-700 transition";
+        oBtn.querySelector('.font-mono').className = "text-[10px] font-mono text-slate-400 font-bold";
+
+        tag.innerText = "FIRMWARE MODE : TRAVELLER MODE";
+        title.innerText = "Cryptographic Time-Bound Token Gating";
+        desc.innerText = "Platform issues asymmetric signed token valid strictly for booked 45-minute window. Solenoid unlocks upon geofenced BLE confirmation and auto-locks when cable is unholstered.";
+        metric.innerText = "Authorization: Signed JWT | Billing: Automated Escrow | Auto-Lock: Engaged";
+        solTxt.textContent = "Solenoid: SECURED";
+        document.getElementById('svg-solenoid').setAttribute('stroke', '#10b981');
+      }
+    }
+
+    // ==========================================
+    // INTERACTIVE DEMO 5: VERIFICATION SCAN
+    // ==========================================
+    let verifyCount = 0;
+    function runVerificationScan() {
+      const btn = document.getElementById('btn-run-verify');
+      const badge = document.getElementById('verify-scan-badge');
+      btn.innerText = "Analyzing 16 points...";
+
+      setTimeout(() => {
+        btn.innerText = "Run CV Diff Analysis";
+        verifyCount++;
+        if (verifyCount % 2 === 1) {
+          badge.className = "px-2.5 py-1.5 rounded bg-emerald-950 border border-emerald-700 text-[11px] font-mono text-emerald-300";
+          badge.innerText = "16 Points Match: Port Flap Intact, Pins Normal";
+        } else {
+          badge.className = "px-2.5 py-1.5 rounded bg-cyan-950 border border-cyan-700 text-[11px] font-mono text-cyan-300";
+          badge.innerText = "0 Disputed Claims | Deposit Clearance Signed";
+        }
+      }, 500);
+    }
+
+    // ==========================================
+    // INTERACTIVE DEMO 6: TELEMETRY FAULT INJECTOR
+    // ==========================================
+    function injectTelemetry(state) {
+      const temp = document.getElementById('val-m-temp');
+      const volts = document.getElementById('val-m-volts');
+      const power = document.getElementById('val-m-power');
+      const fault = document.getElementById('val-m-fault');
+
+      const s1 = document.getElementById('resp-step-1');
+      const s2 = document.getElementById('resp-step-2');
+      const s3 = document.getElementById('resp-step-3');
+      const s4 = document.getElementById('resp-step-4');
+
+      [s1, s2, s3, s4].forEach(s => {
+        s.className = "p-2 rounded bg-slate-900 border border-slate-800";
+        s.querySelector('strong').className = "text-white block";
+      });
+
+      if (state === 'normal') {
+        temp.innerText = "32.4 deg C";
+        temp.className = "text-xl font-bold text-white font-mono";
+        volts.innerText = "230V / 32A";
+        volts.className = "text-xl font-bold text-white font-mono";
+        power.innerText = "7.36 kW";
+        power.className = "text-xl font-bold text-white font-mono";
+        fault.innerText = "0x00 NORMAL";
+        fault.className = "text-xl font-bold text-emerald-400 font-mono";
+
+        s2.className = "p-2 rounded bg-slate-900 border border-cyan-500/50";
+        s2.querySelector('strong').className = "text-cyan-300 block";
+      } else if (state === 'thermal') {
+        temp.innerText = "72.8 deg C !";
+        temp.className = "text-xl font-bold text-rose-400 font-mono";
+        volts.innerText = "0V / 0A (CUT)";
+        volts.className = "text-xl font-bold text-slate-400 font-mono";
+        power.innerText = "0.00 kW";
+        power.className = "text-xl font-bold text-slate-400 font-mono";
+        fault.innerText = "0xE4 THERMAL";
+        fault.className = "text-xl font-bold text-rose-400 font-mono";
+
+        s1.className = "p-2 rounded bg-slate-900 border border-rose-500";
+        s1.querySelector('strong').className = "text-rose-400 block";
+        s2.className = "p-2 rounded bg-slate-900 border border-rose-500";
+        s2.querySelector('strong').className = "text-rose-400 block";
+        s3.className = "p-2 rounded bg-slate-900 border border-cyan-500";
+        s3.querySelector('strong').className = "text-cyan-300 block";
+      } else if (state === 'gfci') {
+        temp.innerText = "31.2 deg C";
+        temp.className = "text-xl font-bold text-white font-mono";
+        volts.innerText = "0V / 0A (ISOLATED)";
+        volts.className = "text-xl font-bold text-amber-400 font-mono";
+        power.innerText = "0.00 kW";
+        power.className = "text-xl font-bold text-slate-400 font-mono";
+        fault.innerText = "0xF1 GFCI_TRIP";
+        fault.className = "text-xl font-bold text-amber-400 font-mono";
+
+        s1.className = "p-2 rounded bg-slate-900 border border-amber-500";
+        s1.querySelector('strong').className = "text-amber-400 block";
+        s2.className = "p-2 rounded bg-slate-900 border border-amber-500";
+        s2.querySelector('strong').className = "text-amber-400 block";
+        s4.className = "p-2 rounded bg-slate-900 border border-cyan-500";
+        s4.querySelector('strong').className = "text-cyan-300 block";
       }
     }
 
